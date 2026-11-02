@@ -13,7 +13,7 @@ settings_audit: unchecked
 localization: unchecked
 translation_en: unchecked
 translation_fr: unchecked
-dependencies: unchecked
+dependencies: "2026-11-02: modDependencies Core only; optional integrations by PatchOperationFindMod on names: Daily furniture (3024562670), GloomyFurniture (1558635181) and Gloomy Furniture Fix; no DLC, no Harmony; loadAfter packageIds of those mods not verified (not installed)"
 workshop: 3811391948
 published: no
 tested_on: never

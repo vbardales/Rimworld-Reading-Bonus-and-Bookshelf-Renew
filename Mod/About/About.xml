@@ -51,7 +51,6 @@ Safe to add to an ongoing save. Removing it mid-save reverts the reading bonus t
   </modDependencies>
   <loadAfter>
     <li>Ludeon.RimWorld</li>
-    <li IfModActive="brrainz.harmony">brrainz.harmony</li>
     <li IfModActive="ZeroWhite.Dailyfurniture">ZeroWhite.Dailyfurniture</li>
     <li IfModActive="jxw.dailyfurniturefix">jxw.dailyfurniturefix</li>
     <li IfModActive="solaris.furniturebase">solaris.furniturebase</li>
