@@ -7,7 +7,7 @@ it in game.
 ## [Unreleased]
 
 First release of the 1.6 update. The mod's own logic is unchanged from Kutake's 1.5 version,
-apart from the one fix below.
+apart from one defect, fixed below (the setting never applied, and the workaround it forced).
 
 ### Added
 
