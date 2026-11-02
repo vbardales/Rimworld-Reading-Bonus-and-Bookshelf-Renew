@@ -23,7 +23,7 @@ remaining:
   - "2026-11-02: Preview.config.json still says Patched, fix at mountPreview"
   - "2026-11-02: unverified: settings in game (primary access, hidden MainButtons shortcut, RIMMSQOL reveal, effect, persistence, logs), never seen running"
   - "2026-11-02: unverified: raw keys, fallback text and clipping in game at playTests"
-  - "2026-11-02: feature: 7.d Pickle suites not written yet (plan in TESTING.md: 4 passes). Blocked on NPT: three steps asked through the TM on 2026-11-02 (room with a filled bookcase and its ReadingBonus value; set a mod setting and press Reset; assert a ThingDef field), answer awaited"
+  - "2026-11-02: feature: 7.d Pickle suites not written yet (plan in TESTING.md: 4 passes). Blocked on NPT (answer 2026-11-02): exist DefFieldSteps (maxItemsInCell), ModOptionsSteps open/close window and settings file, KeyedClick, StageDecor fill; NPT creates (a) set/read option on the static fields of KTK_BookModSettings, (b) closed roofed room, (c) fill a storage building at a quality, (d) assert a room stat; exact step texts and a test ticket id to come, then write the features"
   - "2026-11-02: unverified: 7.g needs localization complete (partial until playTests) and the French re-read"
 protocols_read_sha: 3aab9cb0a46ad9091084fc47a249b97f4c8fd25e
 updated: 2026-11-02
