@@ -23,8 +23,8 @@ remaining:
   - "2026-11-02: Preview.config.json still says Patched, fix at mountPreview"
   - "2026-11-02: unverified: settings in game (primary access, hidden MainButtons shortcut, RIMMSQOL reveal, effect, persistence, logs), never seen running"
   - "2026-11-02: unverified: raw keys, fallback text and clipping in game at playTests"
-  - "2026-11-02: feature: 7.d Pickle suites not written yet (plan in TESTING.md: 4 passes, F1-F4 F6 F9 without optionals, F5 F7 with Daily and Gloomy Furniture, F12 with the original mod)"
-  - "2026-11-02: unverified: 7.f tested sha not recorded; 7.g needs localization complete (partial until playTests) and the French re-read"
+  - "2026-11-02: feature: 7.d Pickle suites not written yet (plan in TESTING.md: 4 passes). Blocked on NPT: three steps asked through the TM on 2026-11-02 (room with a filled bookcase and its ReadingBonus value; set a mod setting and press Reset; assert a ThingDef field), answer awaited"
+  - "2026-11-02: unverified: 7.g needs localization complete (partial until playTests) and the French re-read"
 protocols_read_sha: 3aab9cb0a46ad9091084fc47a249b97f4c8fd25e
 updated: 2026-11-02
 ---
@@ -72,3 +72,5 @@ Date 2026-11-02, revision 01d4456 (+ this commit). Languages shipped: English (`
 ## Testing (writeTests)
 
 2026-11-02: `Tests/ReadingBonusAndBookshelf.Tests.csproj` written, run with `Run-UnitTests.ps1 -PreBuild`: 48 checks, 48 passed, 0 failed; the tested DLL (`Tests/build/test-mod`) is byte-identical to `Mod/Assemblies/KTK_BookPatch.dll` (`cmp`). The XML checks (7.c) live in the same executable (patches, shortcut def, About, translation keys). To make the formula testable, `ScoreFromQualities` was extracted from the room stat worker with no change of behaviour; code comments and the csproj comment were translated to English. The tooltip of the quality sliders was corrected to say the total is divided by 4. Functional scenarios F1 to F12 are in `TESTING.md`; no local script was added (shared `Run-UnitTests.ps1` only).
+
+Tested sha (7.f): offline suite run on the code of `39c8bc1`, 48/48; no `Source/` or `Mod/` change since (only `STATUS.md`, `FRENCH_REVIEW.md` regenerated). Any later code commit reopens 7.b and 7.c.
