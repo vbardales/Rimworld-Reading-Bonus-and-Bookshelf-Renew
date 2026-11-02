@@ -10,7 +10,7 @@
     <LangVersion>latest</LangVersion>
     <Nullable>disable</Nullable>
     <Configuration>Release</Configuration>
-    <OutputPath>..\..\Assemblies\</OutputPath>
+    <OutputPath>..\..\Mod\Assemblies\</OutputPath>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
     <DebugType>none</DebugType>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
