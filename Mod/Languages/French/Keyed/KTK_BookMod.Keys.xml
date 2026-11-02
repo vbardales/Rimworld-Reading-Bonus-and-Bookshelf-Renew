@@ -23,7 +23,7 @@
 
   <KTK_BookMod_ResetToDefault>Réinitialiser les valeurs par défaut</KTK_BookMod_ResetToDefault>
 
-  <KTK_BookMod_bounsTip>Bonus de lecture ajouté par chaque livre de cette qualité dans une pièce, en millièmes. Les pièces sont actualisées à la fermeture de cette fenêtre.</KTK_BookMod_bounsTip>
+  <KTK_BookMod_bounsTip>Poids de chaque livre de cette qualité dans le bonus de lecture de la pièce, en millièmes. Le total est divisé par 4. Les pièces sont actualisées à la fermeture de cette fenêtre.</KTK_BookMod_bounsTip>
 
   <KTK_BookMod_maxBookInCellTip>Nombre de livres qu'une bibliothèque d'un mod de mobilier pris en charge peut contenir par case. S'applique à la fermeture de cette fenêtre.</KTK_BookMod_maxBookInCellTip>
 

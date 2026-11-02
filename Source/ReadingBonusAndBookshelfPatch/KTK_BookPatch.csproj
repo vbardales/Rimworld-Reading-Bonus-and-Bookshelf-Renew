@@ -2,9 +2,9 @@
 
   <PropertyGroup>
     <TargetFramework>net48</TargetFramework>
-    <!-- Nom d'assemblage et espace de noms conserves : les patchs XML visent
-         KTK_BookMod.*, et les reglages sont enregistres sous le nom de la classe
-         Mod. Les renommer casserait la continuite avec la version de Kutake. -->
+    <!-- Assembly name and namespace kept: the XML patches target
+         KTK_BookMod.*, and the settings are stored under the name of the Mod class.
+         Renaming either would break continuity with the original version by Kutake. -->
     <AssemblyName>KTK_BookPatch</AssemblyName>
     <RootNamespace>KTK_BookMod</RootNamespace>
     <LangVersion>latest</LangVersion>

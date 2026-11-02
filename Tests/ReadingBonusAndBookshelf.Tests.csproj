@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <Nullable>enable</Nullable>
+    <RimWorldManagedDir Condition="'$(RimWorldManagedDir)' == ''">C:\Program Files (x86)\Steam\steamapps\common\RimWorld\RimWorldWin64_Data\Managed</RimWorldManagedDir>
+    <ModAssembly Condition="'$(ModAssembly)' == ''">..\Mod\Assemblies\KTK_BookPatch.dll</ModAssembly>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="KTK_BookPatch">
+      <HintPath>$(ModAssembly)</HintPath>
+    </Reference>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>$(RimWorldManagedDir)\Assembly-CSharp.dll</HintPath>
+      <Private>true</Private>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>$(RimWorldManagedDir)\UnityEngine.CoreModule.dll</HintPath>
+      <Private>true</Private>
+    </Reference>
+  </ItemGroup>
+  <Target Name="CheckGamePath" BeforeTargets="ResolveReferences">
+    <Error Condition="!Exists('$(RimWorldManagedDir)\Assembly-CSharp.dll')" Text="Set RimWorldManagedDir to the installed game's Managed directory." />
+  </Target>
+  <Target Name="CopyGameRuntime" AfterTargets="Build">
+    <ItemGroup>
+      <GameRuntime Include="$(RimWorldManagedDir)\*.dll" Exclude="$(RimWorldManagedDir)\mscorlib.dll;$(RimWorldManagedDir)\System*.dll;$(RimWorldManagedDir)\netstandard.dll" />
+    </ItemGroup>
+    <Copy SourceFiles="@(GameRuntime)" DestinationFolder="$(TargetDir)" SkipUnchangedFiles="true" />
+  </Target>
+</Project>

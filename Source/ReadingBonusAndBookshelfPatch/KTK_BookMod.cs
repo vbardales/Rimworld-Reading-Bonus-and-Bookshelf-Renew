@@ -15,17 +15,13 @@ public class KTK_BookMod : Mod
         settings = GetSettings<KTK_BookModSettings>();
     }
 
-    // Toutes les bibliotheques que ce mod prend en charge.
-    //
-    // CORRECTIF. La version d'origine filtrait sur
-    //
-    //     d.HasComp(typeof(Building_KTK_BookCase))
-    //
-    // or HasComp cherche parmi les COMPOSANTS d'une def, tandis que
-    // Building_KTK_BookCase est un thingClass. Le predicat etait donc toujours
-    // faux : cette liste restait vide, et ChangeMaxBookInCell() ne faisait rien.
-    // C'est ce qui avait conduit a ecrire la valeur dans la def a chaque
-    // apparition d'une etagere — un contournement du bug plutot que sa correction.
+	// Every bookcase this mod supports.
+	//
+	// FIX: the original filtered on d.HasComp(typeof(Building_KTK_BookCase)), but
+	// HasComp searches the COMPONENTS of a def while Building_KTK_BookCase is a
+	// thingClass. The predicate was always false, this list stayed empty and
+	// ChangeMaxBookInCell() did nothing. That is why the value used to be written
+	// into the def at every spawn, a workaround for the bug rather than a fix.
     public static IEnumerable<ThingDef> LoadedAllBookCase =>
         DefDatabase<ThingDef>.AllDefsListForReading
             .Where(d => d.thingClass != null
@@ -47,8 +43,7 @@ public class KTK_BookMod : Mod
         return def.defName == "BookcaseSmall" || def.defName == "Bookcase";
     }
 
-    // Rafraichit les pieces ou se trouvent des etageres, pour que le bonus de
-    // lecture soit recalcule sans attendre.
+	// Refreshes the rooms that hold shelves so the reading bonus is recomputed at once.
     public static void ChangeReadingBonus()
     {
         if (Current.ProgramState != ProgramState.Playing) return;
@@ -65,12 +60,11 @@ public class KTK_BookMod : Mod
         }
     }
 
-    // Applique la capacite par case aux etageres non vanilla.
-    //
-    // maxItemsInCell est une valeur de DEF, donc partagee par toutes les etageres
-    // du meme type. On l'ecrit donc une fois, au demarrage et a chaque changement
-    // de reglage — jamais a l'apparition d'un batiment, sans quoi le reglage ne
-    // prendrait effet qu'en posant une nouvelle etagere.
+	// Applies the per-cell capacity to non-vanilla shelves.
+	//
+	// maxItemsInCell is a DEF value, shared by every shelf of the same type, so it is
+	// written once at startup and on every settings change, never when a building
+	// spawns (the setting would then only apply to the next shelf placed).
     public static void ChangeMaxBookInCell()
     {
         foreach (ThingDef def in LoadedAllBookCase)
@@ -89,8 +83,7 @@ public class KTK_BookMod : Mod
     }
 }
 
-// Le reglage doit valoir des le chargement, pas seulement apres un passage par
-// la fenetre des options.
+// The setting must hold from load time, not only after a visit to the options window.
 [StaticConstructorOnStartup]
 public static class KTK_BookModStartup
 {

@@ -34,35 +34,48 @@ public class KTK_RoomStatWorker_ReadingBonus : RoomStatWorker
 
 	private float GetScoreNew(Room room)
 	{
-		float num = 0f;
+		List<QualityCategory?> qualities = new List<QualityCategory?>();
 		foreach (Building_Bookcase item in room.ContainedThings<Building_Bookcase>())
 		{
 			foreach (Book heldBook in item.HeldBooks)
 			{
-				switch (heldBook.TryGetComp<CompQuality>()?.Quality)
-				{
-				case QualityCategory.Awful:
-					num += KTK_BookModSettings.bounsAwful;
-					break;
-				case QualityCategory.Poor:
-					num += KTK_BookModSettings.bounsPoor;
-					break;
-				case QualityCategory.Normal:
-					num += KTK_BookModSettings.bounsNormal;
-					break;
-				case QualityCategory.Good:
-					num += KTK_BookModSettings.bounsGood;
-					break;
-				case QualityCategory.Excellent:
-					num += KTK_BookModSettings.bounsExcellent;
-					break;
-				case QualityCategory.Masterwork:
-					num += KTK_BookModSettings.bounsMasterwork;
-					break;
-				case QualityCategory.Legendary:
-					num += KTK_BookModSettings.bounsLegendary;
-					break;
-				}
+				qualities.Add(heldBook.TryGetComp<CompQuality>()?.Quality);
+			}
+		}
+		return ScoreFromQualities(qualities);
+	}
+
+	// Reading bonus of a room from the quality of every book on its shelves: one
+	// weight per book (set in the mod settings), summed, then divided by 4. A book
+	// without a quality adds nothing. Kept free of game objects so it can be tested.
+	public static float ScoreFromQualities(IEnumerable<QualityCategory?> qualities)
+	{
+		float num = 0f;
+		foreach (QualityCategory? quality in qualities)
+		{
+			switch (quality)
+			{
+			case QualityCategory.Awful:
+				num += KTK_BookModSettings.bounsAwful;
+				break;
+			case QualityCategory.Poor:
+				num += KTK_BookModSettings.bounsPoor;
+				break;
+			case QualityCategory.Normal:
+				num += KTK_BookModSettings.bounsNormal;
+				break;
+			case QualityCategory.Good:
+				num += KTK_BookModSettings.bounsGood;
+				break;
+			case QualityCategory.Excellent:
+				num += KTK_BookModSettings.bounsExcellent;
+				break;
+			case QualityCategory.Masterwork:
+				num += KTK_BookModSettings.bounsMasterwork;
+				break;
+			case QualityCategory.Legendary:
+				num += KTK_BookModSettings.bounsLegendary;
+				break;
 			}
 		}
 		return 1f + num / 4f;

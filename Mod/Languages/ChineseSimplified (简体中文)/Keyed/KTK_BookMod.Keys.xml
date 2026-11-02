@@ -23,7 +23,7 @@
 
   <KTK_BookMod_ResetToDefault>重置</KTK_BookMod_ResetToDefault>
 
-  <KTK_BookMod_bounsTip>房间内每本该品质书籍提供的阅读加成（千分比），关闭此窗口后房间会刷新。</KTK_BookMod_bounsTip>
+  <KTK_BookMod_bounsTip>该品质每本书籍在房间阅读加成中的权重（千分比），总和再除以4。关闭此窗口后房间会刷新。</KTK_BookMod_bounsTip>
 
   <KTK_BookMod_maxBookInCellTip>受支持家具模组的书架每格可存放的书籍数量，关闭此窗口后生效。</KTK_BookMod_maxBookInCellTip>
 

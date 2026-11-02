@@ -22,7 +22,7 @@
   
   <KTK_BookMod_ResetToDefault>Reset to Default</KTK_BookMod_ResetToDefault>
 
-  <KTK_BookMod_bounsTip>Reading bonus added by each book of this quality in a room, in thousandths. Rooms are refreshed when this window is closed.</KTK_BookMod_bounsTip>
+  <KTK_BookMod_bounsTip>Weight of each book of this quality in the room reading bonus, in thousandths. The total is divided by 4. Rooms are refreshed when this window is closed.</KTK_BookMod_bounsTip>
 
   <KTK_BookMod_maxBookInCellTip>How many books a bookcase from a supported furniture mod can hold per cell. Applies when this window is closed.</KTK_BookMod_maxBookInCellTip>
 

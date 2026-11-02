@@ -8,3 +8,4 @@ Source/bin/
 *.user
 *.dds
 Art/.render/
+Tests/build/

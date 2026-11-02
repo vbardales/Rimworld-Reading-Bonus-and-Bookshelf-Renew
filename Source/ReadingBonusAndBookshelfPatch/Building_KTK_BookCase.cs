@@ -69,15 +69,14 @@ public class Building_KTK_BookCase : Building_Bookcase
 		}
 	}
 
-	// CORRECTIF : la version d'origine ecrivait ici
+	// FIX: the original wrote
 	//
 	//     def.building.maxItemsInCell = (int)KTK_BookModSettings.maxBookInCell;
 	//
-	// a chaque apparition d'une etagere. maxItemsInCell est une valeur de DEF,
-	// partagee par toutes les etageres du meme type : baisser le reglage en cours
-	// de partie ne changeait rien tant qu'on n'en posait pas une nouvelle, et la
-	// def restait modifiee jusqu'au redemarrage du jeu.
+	// every time a shelf spawned. maxItemsInCell is a DEF value shared by every shelf
+	// of the same type: lowering the setting mid-game changed nothing until a new
+	// shelf was placed, and the def stayed modified until the game restarted.
 	//
-	// Le reglage est desormais applique une fois, au demarrage et a chaque
-	// changement, par KTK_BookMod.ChangeMaxBookInCell().
+	// The setting is now applied once at startup and on every change, by
+	// KTK_BookMod.ChangeMaxBookInCell().
 }
