@@ -35,6 +35,9 @@ apart from the one fix below.
 
 ### Changed
 
+- **A hidden shortcut to the settings** (`MainButtonDef KTK_BookMod_Settings`, hidden by default) that a customization mod such as RIMMSQOL can reveal. It opens the same settings as Options, Mod settings.
+- **Tooltips on the reading-bonus sliders and the max-books slider**, saying what they do and when they apply, and a greyed note where the max-books slider used to disappear when no supported furniture mod is loaded.
+
 - **Renamed "Reading Bonus and Bookshelf Renew (unofficial)", packageId `nelim.readingbonusandbookshelf`.** "Patched" is dropped: a patch now names a link between two mods, and this is a corrected copy of a mod. The source mod is abandoned and states no licence, hence the "unofficial" mark and the credit and removal-on-request paragraph in the description.
 
 - **The mod settings list now shows the mod's name.** The settings category used the key

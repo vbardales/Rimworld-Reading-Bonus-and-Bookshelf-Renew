@@ -73,19 +73,27 @@ public class KTK_BookModSettings : ModSettings
 		listing_Standard.CheckboxLabeled("KTK_BookMod_changeReadingBouns".Translate(), ref changeReadingBonus);
 		if (changeReadingBonus)
 		{
+			string tip = "KTK_BookMod_bounsTip".Translate();
 			listing_Standard.GapLine();
-			DoSliderLabeled(listing_Standard, "KTK_BookMod_bounsAwful".Translate() + "  " + GetPercString(bounsAwful), ref bounsAwful, 0f, 0.1f, null, 0.001f);
-			DoSliderLabeled(listing_Standard, "KTK_BookMod_bounsPoor".Translate() + "  " + GetPercString(bounsPoor), ref bounsPoor, 0f, 0.1f, null, 0.001f);
-			DoSliderLabeled(listing_Standard, "KTK_BookMod_bounsNormal".Translate() + "  " + GetPercString(bounsNormal), ref bounsNormal, 0f, 0.1f, null, 0.001f);
-			DoSliderLabeled(listing_Standard, "KTK_BookMod_bounsGood".Translate() + "  " + GetPercString(bounsGood), ref bounsGood, 0f, 0.1f, null, 0.001f);
-			DoSliderLabeled(listing_Standard, "KTK_BookMod_bounsExcellent".Translate() + "  " + GetPercString(bounsExcellent), ref bounsExcellent, 0f, 0.1f, null, 0.001f);
-			DoSliderLabeled(listing_Standard, "KTK_BookMod_bounsMasterwork".Translate() + "  " + GetPercString(bounsMasterwork), ref bounsMasterwork, 0f, 0.1f, null, 0.001f);
-			DoSliderLabeled(listing_Standard, "KTK_BookMod_bounsLegendary".Translate() + "  " + GetPercString(bounsLegendary), ref bounsLegendary, 0f, 0.1f, null, 0.001f);
+			DoSliderLabeled(listing_Standard, "KTK_BookMod_bounsAwful".Translate() + "  " + GetPercString(bounsAwful), ref bounsAwful, 0f, 0.1f, tip, 0.001f);
+			DoSliderLabeled(listing_Standard, "KTK_BookMod_bounsPoor".Translate() + "  " + GetPercString(bounsPoor), ref bounsPoor, 0f, 0.1f, tip, 0.001f);
+			DoSliderLabeled(listing_Standard, "KTK_BookMod_bounsNormal".Translate() + "  " + GetPercString(bounsNormal), ref bounsNormal, 0f, 0.1f, tip, 0.001f);
+			DoSliderLabeled(listing_Standard, "KTK_BookMod_bounsGood".Translate() + "  " + GetPercString(bounsGood), ref bounsGood, 0f, 0.1f, tip, 0.001f);
+			DoSliderLabeled(listing_Standard, "KTK_BookMod_bounsExcellent".Translate() + "  " + GetPercString(bounsExcellent), ref bounsExcellent, 0f, 0.1f, tip, 0.001f);
+			DoSliderLabeled(listing_Standard, "KTK_BookMod_bounsMasterwork".Translate() + "  " + GetPercString(bounsMasterwork), ref bounsMasterwork, 0f, 0.1f, tip, 0.001f);
+			DoSliderLabeled(listing_Standard, "KTK_BookMod_bounsLegendary".Translate() + "  " + GetPercString(bounsLegendary), ref bounsLegendary, 0f, 0.1f, tip, 0.001f);
 			listing_Standard.GapLine();
 		}
 		if (IsFurnitureModFinded())
 		{
-			DoSliderLabeled(listing_Standard, "KTK_BookMod_maxBookInCell".Translate() + "  " + maxBookInCell.ToString("F0"), ref maxBookInCell, 5f, 100f, null, 1f);
+			DoSliderLabeled(listing_Standard, "KTK_BookMod_maxBookInCell".Translate() + "  " + maxBookInCell.ToString("F0"), ref maxBookInCell, 5f, 100f, "KTK_BookMod_maxBookInCellTip".Translate(), 1f);
+			listing_Standard.GapLine();
+		}
+		else
+		{
+			GUI.color = Color.gray;
+			listing_Standard.Label("KTK_BookMod_maxBookInCellUnavailable".Translate());
+			GUI.color = Color.white;
 			listing_Standard.GapLine();
 		}
 		if (listing_Standard.ButtonText("KTK_BookMod_ResetToDefault".Translate()))

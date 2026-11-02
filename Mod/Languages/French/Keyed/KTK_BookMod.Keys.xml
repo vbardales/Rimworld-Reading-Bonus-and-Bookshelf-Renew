@@ -23,4 +23,10 @@
 
   <KTK_BookMod_ResetToDefault>Réinitialiser les valeurs par défaut</KTK_BookMod_ResetToDefault>
 
+  <KTK_BookMod_bounsTip>Bonus de lecture ajouté par chaque livre de cette qualité dans une pièce, en millièmes. Les pièces sont actualisées à la fermeture de cette fenêtre.</KTK_BookMod_bounsTip>
+
+  <KTK_BookMod_maxBookInCellTip>Nombre de livres qu'une bibliothèque d'un mod de mobilier pris en charge peut contenir par case. S'applique à la fermeture de cette fenêtre.</KTK_BookMod_maxBookInCellTip>
+
+  <KTK_BookMod_maxBookInCellUnavailable>Livres maximum par case : demande Daily Furniture ou Gloomy Furniture.</KTK_BookMod_maxBookInCellUnavailable>
+
 </LanguageData>
