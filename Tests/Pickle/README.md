@@ -9,7 +9,7 @@ Written 2026-11-02, **never run**: no scenario here is a pass. The steps they us
 | File | Scenarios | Covers (see `TESTING.md`) |
 | --- | --- | --- |
 | `01-reading-bonus.feature` | 6 blocks (the outline plays 7 qualities) | F1 every book counts, F6 vanilla bookcase still drawn (`@review`) |
-| `02-settings.feature` | 3 | F2 weights, F4 reset, F9 settings window (`@review`) |
+| `02-settings.feature` | 4 | F2 weights, F3 toggle off (vanilla value derived from NPT's 1.016 for 2 books), F4 reset, F9 settings window (`@review`) |
 | `03-furniture.feature` | 2 | F5, F7 with Gloomy Furniture (`@requires:Solaris.FurnitureBase`) |
 | `04-daily-furniture.feature` | 2 outlines (2 shelves each) | F5, F7 with Daily Furniture (`@requires:ZeroWhite.Dailyfurniture`) |
 
@@ -31,6 +31,6 @@ Through the Ticket Manager only (`PICKLE.md`). The `Solaris.FurnitureBase` id (1
 
 ## Not covered here, and why
 
-- **F3 (toggle off gives the vanilla bonus):** the vanilla number depends on the bookcase capacity, which this suite does not know yet. To add once a first run prints the real value of a filled bookcase with the toggle off.
+- **F3 number:** the vanilla value in `02-settings.feature` is derived (1.016 measured by NPT for 2 Good novels, so 1.032 for 4), to confirm on the first run.
 - **F8 (add or remove the mod in a save), F10 (hidden shortcut revealed by RIMMSQOL), F11 (French and Chinese layout), F12 (the original Kutake mod loaded):** need a removal request (`-ThenWithout`), RIMMSQOL staged, a human reading the captures, or the original mod staged. Planned for `playTests`.
 - **Slider tooltips:** HoverSteps is available; the scenario is not written yet.

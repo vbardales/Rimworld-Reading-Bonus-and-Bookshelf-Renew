@@ -42,3 +42,17 @@ Feature: Reading Bonus and Bookshelf: the settings change the bonus and reset cl
     And I take a screenshot "settings-window"
     And Nelim's Pickle Tools: I close the mod options window
     Then no errors were logged
+
+  # F3. The vanilla value is derived, not yet measured on this shelf: NPT's run of 2026-11-03 read 1.016 for
+  # 2 Good novels in a vanilla Bookcase (0.4 of a cell at 0.04 a full cell, so 5 books a cell), hence
+  # 4 novels = 0.8 of a cell = 1.032. Correct the number from the first run if it differs.
+  @timeout:300
+  Scenario: with the rework off the vanilla calculation applies, and reset brings the rework back
+    When Nelim's Pickle Tools: I open the mod options page of the mod "nelim.readingbonusandbookshelf"
+    And Nelim's Pickle Tools: I set the option "changeReadingBonus" of the mod "nelim.readingbonusandbookshelf" to "False"
+    And Nelim's Pickle Tools: I close the mod options window
+    Then Nelim's Pickle Tools: the room at (31, 31) has the stat "ReadingBonus" at 1.032
+    When Nelim's Pickle Tools: I open the mod options page of the mod "nelim.readingbonusandbookshelf"
+    And I click button keyed "KTK_BookMod_ResetToDefault"
+    And Nelim's Pickle Tools: I close the mod options window
+    Then Nelim's Pickle Tools: the room at (31, 31) has the stat "ReadingBonus" at 1.01

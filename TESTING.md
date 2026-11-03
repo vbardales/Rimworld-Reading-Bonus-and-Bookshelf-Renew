@@ -45,4 +45,4 @@ Figures are the code's: the bonus of a room is `1 + (sum of the weight of every 
 
 ## Pickle suites (written, not run)
 
-`Tests/Pickle/` holds 13 scenario blocks in 4 features and 3 passes (minimal, Gloomy Furniture, Daily Furniture); `Tests/Pickle/README.md` gives the matrix, the commands and what is left out and why. `Check-Steps.ps1` resolves every step line to exactly one expression. Nothing has run: F1, F2, F4, F5, F6, F7 and F9 are covered on paper only. F3, F8, F10, F11 and F12 stay manual or wait for a first run (reasons in the README). Any step a scenario still needs goes to NPT, never a local step.
+`Tests/Pickle/` holds 14 scenario blocks in 4 features and 3 passes (minimal, Gloomy Furniture, Daily Furniture); `Tests/Pickle/README.md` gives the matrix, the commands and what is left out and why. `Check-Steps.ps1` resolves every step line to exactly one expression. Nothing has run: F1 to F7 and F9 are covered on paper only. F8, F10, F11 and F12 stay manual or wait for a first run (reasons in the README). Any step a scenario still needs goes to NPT, never a local step.

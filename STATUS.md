@@ -23,7 +23,7 @@ remaining:
   - "2026-11-02: Preview.config.json still says Patched, fix at mountPreview"
   - "2026-11-02: unverified: settings in game (primary access, hidden MainButtons shortcut, RIMMSQOL reveal, effect, persistence, logs), never seen running"
   - "2026-11-02: unverified: raw keys, fallback text and clipping in game at playTests"
-  - "2026-11-02: 7.d done: Pickle suites written, not run (Tests/Pickle: 4 features, 13 scenario blocks, 3 passes; Check-Steps resolves every line). Steps created by NPT the same day, test ticket 4665 (exploratory) pending; not covered: F3 vanilla number, F8, F10, F11, F12, tooltips (Tests/Pickle/README.md)"
+  - "2026-11-02: 7.d done: Pickle suites written, not run (Tests/Pickle: 4 features, 14 scenario blocks, 3 passes; Check-Steps resolves every line). Steps created by NPT the same day, test ticket 4665 (exploratory) pending; not covered: F8, F10, F11, F12, tooltips (Tests/Pickle/README.md)"
   - "2026-11-02: 7.g done: localization complete (inventory, coverage, French reviewed by Virginie); raw keys, fallback and clipping in game stay unverified until playTests"
 protocols_read_sha: d17469c9c6e799a503821573de9ce2aa18e057d6
 updated: 2026-11-02
