@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Reading Bonus and Bookshelf - Pickle tests</name>
+  <author>Nelim</author>
+  <packageId>nelim.readingbonusandbookshelf.pickletests</packageId>
+  <supportedVersions>
+    <li>1.6</li>
+  </supportedVersions>
+  <description>In-game functional tests for Reading Bonus and Bookshelf Renew, run by Pickle. Development only: never published.</description>
+  <modDependencies>
+    <li>
+      <packageId>nelim.readingbonusandbookshelf</packageId>
+      <displayName>Reading Bonus and Bookshelf Renew (unofficial)</displayName>
+    </li>
+    <li>
+      <packageId>rimworks.pickle</packageId>
+      <displayName>Pickle</displayName>
+      <steamWorkshopUrl>steam://url/CommunityFilePage/3791648678</steamWorkshopUrl>
+    </li>
+  </modDependencies>
+  <loadAfter>
+    <li>nelim.readingbonusandbookshelf</li>
+    <li>rimworks.pickle</li>
+  </loadAfter>
+</ModMetaData>

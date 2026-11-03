@@ -1,0 +1,7 @@
+# Minimal pass: the mod and the shared Pickle tools, no optional furniture mod. Plays 01 and 02.
+# -Mod ReadingBonusAndBookshelfRenew -DepMap wsl-deps.sans-facultatifs.map -Language English (then French)
+nelim.pickletools.stagedecor   path:PickleTools/StageDecor/Mod
+nelim.pickletools.colonistrace path:PickleTools/ColonistRace/Mod
+nelim.pickletools.keyedclick   path:PickleTools/KeyedClick/Mod
+nelim.pickletools.deffields    path:PickleTools/DefFieldSteps/Mod
+nelim.pickletools              path:PickleTools/Tests/Pickle/StandaloneBase/Mod

@@ -9,3 +9,6 @@ Source/bin/
 *.dds
 Art/.render/
 Tests/build/
+Tests/Pickle/Inbox/
+Tests/Pickle/Evidence/
+Tests/Pickle/Parked/

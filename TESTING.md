@@ -43,6 +43,6 @@ Figures are the code's: the bonus of a room is `1 + (sum of the weight of every 
 | F11 | French and Chinese | language set to French, then Simplified Chinese | open the settings window and hover each slider | no raw key, no clipped text, the tooltips read as in `FRENCH_REVIEW.md` |
 | F12 | Incompatibility with the original | `Kutake.ReadingBoundsAndBookshelfPatch` also loaded | start the game | the game warns of the declared incompatibility |
 
-## Pickle passes (to write)
+## Pickle suites (written, not run)
 
-None written yet. Planned: pass 1 without optional mods (F1 to F4, F6, F9); pass 2 with Daily Furniture (F5, F7); pass 3 with Gloomy Furniture (F5, F7); pass 4 with the original Kutake mod (F12, replayed only when that mod changes). F8, F10 and F11 need the player's setup or a customization mod and stay manual until a step exists for them (to ask NPT, never a local step).
+`Tests/Pickle/` holds 13 scenario blocks in 4 features and 3 passes (minimal, Gloomy Furniture, Daily Furniture); `Tests/Pickle/README.md` gives the matrix, the commands and what is left out and why. `Check-Steps.ps1` resolves every step line to exactly one expression. Nothing has run: F1, F2, F4, F5, F6, F7 and F9 are covered on paper only. F3, F8, F10, F11 and F12 stay manual or wait for a first run (reasons in the README). Any step a scenario still needs goes to NPT, never a local step.
