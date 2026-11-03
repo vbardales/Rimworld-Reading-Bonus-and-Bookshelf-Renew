@@ -22,6 +22,7 @@ remaining:
   - "2026-11-02: declareDependencies done (4.d ids confirmed by corpus search, Harmony loadAfter dropped). feature to decide: the installed GloomyFurniture fork is named GloomyFurniture (Continued) (Gloomy.Furniture.Continued, 3240958004) so the PatchOperationFindMod on name GloomyFurniture does not match it; not patched"
   - "2026-11-02: Preview.config.json still says Patched, fix at mountPreview"
   - "2026-11-02: unverified: settings in game (primary access, hidden MainButtons shortcut, RIMMSQOL reveal, effect, persistence, logs), never seen running"
+  - "2026-11-03: ticket 20261103-084106-633-fcfe queued: minimal pass English, features 01 and 02, tree frozen at 3dd59a8 (keep Source/ Mod/ Tests/ untouched until RUN_DONE)"
   - "2026-11-02: unverified: raw keys, fallback text and clipping in game at playTests"
   - "2026-11-02: 7.d done: Pickle suites written, not run (Tests/Pickle: 4 features, 14 scenario blocks, 3 passes; Check-Steps resolves every line). Steps created by NPT the same day, test ticket 4665 (exploratory) pending; not covered: F8, F10, F11, F12, tooltips (Tests/Pickle/README.md)"
   - "2026-11-02: 7.g done: localization complete (inventory, coverage, French reviewed by Virginie); raw keys, fallback and clipping in game stay unverified until playTests"
