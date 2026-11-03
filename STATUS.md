@@ -24,7 +24,7 @@ remaining:
   - "2026-11-02: unverified: settings in game (primary access, hidden MainButtons shortcut, RIMMSQOL reveal, effect, persistence, logs), never seen running"
   - "2026-11-02: unverified: raw keys, fallback text and clipping in game at playTests"
   - "2026-11-02: feature: 7.d Pickle suites not written yet (plan in TESTING.md: 4 passes). Blocked on NPT (answer 2026-11-02): exist DefFieldSteps (maxItemsInCell), ModOptionsSteps open/close window and settings file, KeyedClick, StageDecor fill; NPT creates (a) set/read option on the static fields of KTK_BookModSettings, (b) closed roofed room, (c) fill a storage building at a quality, (d) assert a room stat; exact step texts and a test ticket id to come, then write the features"
-  - "2026-11-02: unverified: 7.g needs localization complete (partial until playTests) and the French re-read"
+  - "2026-11-02: unverified: 7.g needs localization complete (partial until the in-game checks at playTests)"
 protocols_read_sha: 3aab9cb0a46ad9091084fc47a249b97f4c8fd25e
 updated: 2026-11-02
 ---
@@ -55,7 +55,7 @@ Usage review fixes made today: tooltips on the 7 quality sliders and on max book
 
 Commands: `dotnet build` Release 0 errors; `Check-ModBasics` PASS (11 XML, 1 def); `Check-Translations` PASS (14 Keyed calls); `Check-DefInjected` 4 keys, 0 errors.
 
-Not done (`unverified`, in `remaining`): everything that needs the game, at `playTests`: first use, primary access, actual effect of each option, persistence across restart and save, input bounds, reset, optional furniture present or absent, shortcut hidden on a clean configuration, RIMMSQOL reveal and hide, log robustness. No unit-test project exists for this mod. Known limit: the max-books slider is greyed out only by a note, not disabled, and the Chinese texts are machine-written.
+Not done (`unverified`, in `remaining`): everything that needs the game, at `playTests`: first use, primary access, actual effect of each option, persistence across restart and save, input bounds, reset, optional furniture present or absent, shortcut hidden on a clean configuration, RIMMSQOL reveal and hide, log robustness. Known limit: the max-books slider is greyed out only by a note, not disabled, and the Chinese texts are machine-written.
 
 ## Translation audit
 
