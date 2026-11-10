@@ -55,6 +55,7 @@ Safe to add to an ongoing save. Removing it mid-save reverts the reading bonus t
     <li IfModActive="jxw.dailyfurniturefix">jxw.dailyfurniturefix</li>
     <li IfModActive="solaris.furniturebase">solaris.furniturebase</li>
     <li IfModActive="gloomy.furniture.fix">gloomy.furniture.fix</li>
+    <li IfModActive="Gloomy.Furniture.Continued">Gloomy.Furniture.Continued</li>
   </loadAfter>
   <incompatibleWith>
     <li>Kutake.ReadingBoundsAndBookshelfPatch</li>

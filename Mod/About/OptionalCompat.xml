@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<OptionalCompat>
+  <li><packageId>Gloomy.Furniture.Continued</packageId><workshopId>3240958004</workshopId><kind>patch</kind></li>
+  <li><packageId>Gloomy.Furniture.Fix</packageId><workshopId>2987876242</workshopId><kind>patch</kind></li>
+  <li><packageId>Solaris.FurnitureBase</packageId><workshopId>1558635181</workshopId><kind>patch</kind></li>
+  <li><packageId>ZeroWhite.Dailyfurniture</packageId><workshopId>3024562670</workshopId><kind>patch</kind></li>
+</OptionalCompat>

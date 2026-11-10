@@ -4,6 +4,7 @@
     <Operation Class="PatchOperationFindMod">
         <mods>
             <li>GloomyFurniture</li>
+            <li>GloomyFurniture (Continued)</li>
         </mods>
         <match Class="PatchOperationFindMod">
             <mods>

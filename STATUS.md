@@ -13,13 +13,14 @@ settings_audit: partial
 localization: complete
 translation_en: complete
 translation_fr: complete
-dependencies: "2026-11-02: modDependencies Core only; optional integrations by PatchOperationFindMod on names: Daily furniture (3024562670), GloomyFurniture (1558635181) and Gloomy Furniture Fix; no DLC, no Harmony; loadAfter packageIds seen in other mods About.xml (Search-Workshop 2026-11-02, 9565 folders): ZeroWhite.Dailyfurniture, jxw.dailyfurniturefix, solaris.furniturebase, gloomy.furniture.fix"
+dependencies: "2026-11-10 adds Gloomy.Furniture.Continued (3240958004) as optional patch target and loadAfter; 2026-11-02: modDependencies Core only; optional integrations by PatchOperationFindMod on names: Daily furniture (3024562670), GloomyFurniture (1558635181) and Gloomy Furniture Fix; no DLC, no Harmony; loadAfter packageIds seen in other mods About.xml (Search-Workshop 2026-11-02, 9565 folders): ZeroWhite.Dailyfurniture, jxw.dailyfurniturefix, solaris.furniturebase, gloomy.furniture.fix"
 workshop: 3811391948
+workshop_required_items: "n/a, not released yet"
 published: no
 tested_on: never
 remaining:
   - "2026-11-02: 1.c done: Patch now means a link between two mods, this is a corrected copy so Renew (rule of Virginie via Audit); packageId changed to nelim.readingbonusandbookshelf, Workshop item 3811391948 kept, it was hidden at 0.1.0 when the id changed"
-  - "2026-11-02: declareDependencies done (4.d ids confirmed by corpus search, Harmony loadAfter dropped). feature to decide: the installed GloomyFurniture fork is named GloomyFurniture (Continued) (Gloomy.Furniture.Continued, 3240958004) so the PatchOperationFindMod on name GloomyFurniture does not match it; not patched"
+  - "2026-11-10: declareDependencies redone: GloomyFurniture (Continued) (Gloomy.Furniture.Continued, 3240958004) now patched (owner chose support): name added to the FindMod of GloomyFurnitureBookShelfPatch.xml (GL_Bookshelf has the same thingClass, minifiedDef and thingCategories as the original), loadAfter IfModActive entry, Mod/About/OptionalCompat.xml created (4 targets, kind patch, Check-OptionalCompat OK); offline tests 48/48 rerun; in game unverified (Gloomy pass of Tests/Pickle is on the original mod only)"
   - "2026-11-02: Preview.config.json still says Patched, fix at mountPreview"
   - "2026-11-02: unverified: settings in game (primary access, hidden MainButtons shortcut, RIMMSQOL reveal, effect, persistence, logs), never seen running"
   - "2026-11-10: ticket 20261103-084106-633-fcfe done, 0/16: every scenario fails at the room step (cell (29, 29) already holds Slate on test-colony), cause is the test origin (30, 30), not the mod; asked NPT for a free origin, then change Features 01 to 04 and refile; run deleted from Inbox"
