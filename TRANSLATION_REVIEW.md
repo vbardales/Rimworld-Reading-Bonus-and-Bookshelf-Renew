@@ -17,7 +17,7 @@ Languages: ChineseSimplified (简体中文) (16 keys, 0 missing against English)
 
 | Key or path | Original | English | ChineseSimplified (简体中文) | ? |
 |---|---|---|---|---|
-| `KTK_BookMod_ReadingBounsChange` | Reading Bonus and Bookshelf Renew | Reading Bonus and Bookshelf Renew | Reading Bonus and Bookshelf Renew |  |
+| `KTK_BookMod_ReadingBounsChange` | Reading Bonus and Bookshelf Renew (unofficial) | Reading Bonus and Bookshelf Renew (unofficial) | Reading Bonus and Bookshelf Renew (unofficial) |  |
 | `KTK_BookMod_changeReadingBouns` | Change reading bonus calculation | Change reading bonus calculation | 是否改变阅读加成逻辑 |  |
 | `KTK_BookMod_bounsAwful` | Awful-quality Books | Awful-quality Books | 极差书籍 |  |
 | `KTK_BookMod_bounsPoor` | Poor-quality Books | Poor-quality Books | 较差书籍 |  |
@@ -43,7 +43,7 @@ Languages: ChineseSimplified (简体中文) (16 keys, 0 missing against English)
 
 | Key or path | Original | English | French | ? |
 |---|---|---|---|---|
-| `KTK_BookMod_ReadingBounsChange` | Reading Bonus and Bookshelf Renew | Reading Bonus and Bookshelf Renew | Reading Bonus and Bookshelf Renew |  |
+| `KTK_BookMod_ReadingBounsChange` | Reading Bonus and Bookshelf Renew (unofficial) | Reading Bonus and Bookshelf Renew (unofficial) | Reading Bonus and Bookshelf Renew (unofficial) |  |
 | `KTK_BookMod_changeReadingBouns` | Change reading bonus calculation | Change reading bonus calculation | Modifier le calcul du bonus de lecture |  |
 | `KTK_BookMod_bounsAwful` | Awful-quality Books | Awful-quality Books | Livres (horrible) |  |
 | `KTK_BookMod_bounsPoor` | Poor-quality Books | Poor-quality Books | Livres (médiocre) |  |
