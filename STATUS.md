@@ -24,6 +24,7 @@ remaining:
   - "2026-11-02: Preview.config.json still says Patched, fix at mountPreview"
   - "2026-11-02: unverified: settings in game (primary access, hidden MainButtons shortcut, RIMMSQOL reveal, effect, persistence, logs), never seen running"
   - "2026-11-10: ticket fcfe done 0/16 (room origin (30, 30) is natural rock on test-colony); fixed per NPT: Features 01 to 04 moved to room (70, 85), bookcase (72, 88), probe (71, 86), not played; refile minimal pass"
+  - "2026-11-10: ticket 20261110-174946-286-18d5 queued: minimal pass English, features 01 and 02, tree frozen at 698358f (keep Source/ Mod/ Tests/ untouched until RUN_DONE)"
   - "2026-11-10: 7b Preview not rendered: Render-Preview.cjs fails, Art/echo.png missing (only echo-concept.png tracked); Art/Preview.config.json has uncommitted new-schema edits not made by this session; fix at mountPreview"
   - "2026-11-02: unverified: raw keys, fallback text and clipping in game at playTests"
   - "2026-11-02: 7.d done: Pickle suites written, not run (Tests/Pickle: 4 features, 14 scenario blocks, 3 passes; Check-Steps resolves every line). Steps created by NPT the same day, test ticket 4665 (exploratory) pending; not covered: F8, F10, F11, F12, tooltips (Tests/Pickle/README.md)"
