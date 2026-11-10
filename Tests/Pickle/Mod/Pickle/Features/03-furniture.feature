@@ -9,14 +9,14 @@ Feature: Reading Bonus and Bookshelf: Gloomy Furniture bookshelves are supported
 
   Background:
     Given the save "test-colony" is loaded
-    And Nelim's Pickle Tools: a closed roofed room is built at (30, 30) of 5 by 5
+    And Nelim's Pickle Tools: a closed roofed room is built at (70, 85) of 5 by 5
 
   @timeout:300
   Scenario: a Gloomy bookshelf stores books and counts for the bonus
-    Given Nelim's Pickle Tools: I place the decor "GL_Bookshelf" at (32, 33)
-    And Nelim's Pickle Tools: I fill the storage building "GL_Bookshelf" at (32, 33) with 4 things "Novel" of quality Normal
-    Then Nelim's Pickle Tools: the storage building "GL_Bookshelf" at (32, 33) holds 4 things
-    And Nelim's Pickle Tools: the room at (31, 31) has the stat "ReadingBonus" at 1.01
+    Given Nelim's Pickle Tools: I place the decor "GL_Bookshelf" at (72, 88)
+    And Nelim's Pickle Tools: I fill the storage building "GL_Bookshelf" at (72, 88) with 4 things "Novel" of quality Normal
+    Then Nelim's Pickle Tools: the storage building "GL_Bookshelf" at (72, 88) holds 4 things
+    And Nelim's Pickle Tools: the room at (71, 86) has the stat "ReadingBonus" at 1.01
 
   @timeout:300
   Scenario: the max books per cell setting reaches the Gloomy bookshelf and the reset restores it

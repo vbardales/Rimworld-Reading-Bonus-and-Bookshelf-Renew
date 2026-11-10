@@ -5,9 +5,9 @@ Feature: Reading Bonus and Bookshelf: the settings change the bonus and reset cl
 
   Background:
     Given the save "test-colony" is loaded
-    And Nelim's Pickle Tools: a closed roofed room is built at (30, 30) of 5 by 5
-    And Nelim's Pickle Tools: I place the decor "Bookcase" at (32, 33)
-    And Nelim's Pickle Tools: I fill the storage building "Bookcase" at (32, 33) with 4 things "Novel" of quality Normal
+    And Nelim's Pickle Tools: a closed roofed room is built at (70, 85) of 5 by 5
+    And Nelim's Pickle Tools: I place the decor "Bookcase" at (72, 88)
+    And Nelim's Pickle Tools: I fill the storage building "Bookcase" at (72, 88) with 4 things "Novel" of quality Normal
 
   @timeout:300
   Scenario: a heavier normal weight raises the bonus, and reset brings it back
@@ -15,12 +15,12 @@ Feature: Reading Bonus and Bookshelf: the settings change the bonus and reset cl
     And Nelim's Pickle Tools: I set the option "bounsNormal" of the mod "nelim.readingbonusandbookshelf" to "0.02"
     And Nelim's Pickle Tools: I close the mod options window
     Then Nelim's Pickle Tools: the settings file of the mod "nelim.readingbonusandbookshelf" holds "bounsNormal" as "0.02"
-    And Nelim's Pickle Tools: the room at (31, 31) has the stat "ReadingBonus" at 1.02
+    And Nelim's Pickle Tools: the room at (71, 86) has the stat "ReadingBonus" at 1.02
     When Nelim's Pickle Tools: I open the mod options page of the mod "nelim.readingbonusandbookshelf"
     And I click button keyed "KTK_BookMod_ResetToDefault"
     And Nelim's Pickle Tools: I close the mod options window
     Then Nelim's Pickle Tools: the option "bounsNormal" of the mod "nelim.readingbonusandbookshelf" is "0.01"
-    And Nelim's Pickle Tools: the room at (31, 31) has the stat "ReadingBonus" at 1.01
+    And Nelim's Pickle Tools: the room at (71, 86) has the stat "ReadingBonus" at 1.01
 
   @timeout:300
   Scenario: reset restores every setting, not only the one that was changed
@@ -51,8 +51,8 @@ Feature: Reading Bonus and Bookshelf: the settings change the bonus and reset cl
     When Nelim's Pickle Tools: I open the mod options page of the mod "nelim.readingbonusandbookshelf"
     And Nelim's Pickle Tools: I set the option "changeReadingBonus" of the mod "nelim.readingbonusandbookshelf" to "False"
     And Nelim's Pickle Tools: I close the mod options window
-    Then Nelim's Pickle Tools: the room at (31, 31) has the stat "ReadingBonus" at 1.032
+    Then Nelim's Pickle Tools: the room at (71, 86) has the stat "ReadingBonus" at 1.032
     When Nelim's Pickle Tools: I open the mod options page of the mod "nelim.readingbonusandbookshelf"
     And I click button keyed "KTK_BookMod_ResetToDefault"
     And Nelim's Pickle Tools: I close the mod options window
-    Then Nelim's Pickle Tools: the room at (31, 31) has the stat "ReadingBonus" at 1.01
+    Then Nelim's Pickle Tools: the room at (71, 86) has the stat "ReadingBonus" at 1.01

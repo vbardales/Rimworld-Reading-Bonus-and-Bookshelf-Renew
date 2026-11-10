@@ -13,7 +13,7 @@ Written 2026-11-02, **never run**: no scenario here is a pass. The steps they us
 | `03-furniture.feature` | 2 | F5, F7 with Gloomy Furniture (`@requires:Solaris.FurnitureBase`) |
 | `04-daily-furniture.feature` | 2 outlines (2 shelves each) | F5, F7 with Daily Furniture (`@requires:ZeroWhite.Dailyfurniture`) |
 
-Each scenario loads `test-colony`, builds a closed roofed 5 by 5 room at (30, 30), places a bookcase at (32, 33) and checks the `ReadingBonus` room stat at (31, 31).
+Each scenario loads `test-colony`, builds a closed roofed 5 by 5 room at (70, 85), places a bookcase at (72, 88) and checks the `ReadingBonus` room stat at (71, 86).
 
 ## Passes
 
