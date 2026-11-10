@@ -22,12 +22,13 @@ remaining:
   - "2026-11-02: declareDependencies done (4.d ids confirmed by corpus search, Harmony loadAfter dropped). feature to decide: the installed GloomyFurniture fork is named GloomyFurniture (Continued) (Gloomy.Furniture.Continued, 3240958004) so the PatchOperationFindMod on name GloomyFurniture does not match it; not patched"
   - "2026-11-02: Preview.config.json still says Patched, fix at mountPreview"
   - "2026-11-02: unverified: settings in game (primary access, hidden MainButtons shortcut, RIMMSQOL reveal, effect, persistence, logs), never seen running"
-  - "2026-11-03: ticket 20261103-084106-633-fcfe queued: minimal pass English, features 01 and 02, tree frozen at 3dd59a8 (keep Source/ Mod/ Tests/ untouched until RUN_DONE)"
+  - "2026-11-10: ticket 20261103-084106-633-fcfe done, 0/16: every scenario fails at the room step (cell (29, 29) already holds Slate on test-colony), cause is the test origin (30, 30), not the mod; asked NPT for a free origin, then change Features 01 to 04 and refile; run deleted from Inbox"
+  - "2026-11-10: 7b Preview not rendered: Render-Preview.cjs fails, Art/echo.png missing (only echo-concept.png tracked); Art/Preview.config.json has uncommitted new-schema edits not made by this session; fix at mountPreview"
   - "2026-11-02: unverified: raw keys, fallback text and clipping in game at playTests"
   - "2026-11-02: 7.d done: Pickle suites written, not run (Tests/Pickle: 4 features, 14 scenario blocks, 3 passes; Check-Steps resolves every line). Steps created by NPT the same day, test ticket 4665 (exploratory) pending; not covered: F8, F10, F11, F12, tooltips (Tests/Pickle/README.md)"
   - "2026-11-02: 7.g done: localization complete (inventory, coverage, French reviewed by Virginie); raw keys, fallback and clipping in game stay unverified until playTests"
-protocols_read_sha: d17469c9c6e799a503821573de9ce2aa18e057d6
-updated: 2026-11-02
+protocols_read_sha: 41435581d5b373fc72b95b1c83080954381bd6a4
+updated: 2026-11-10
 ---
 
 # Reading Bonus and Bookshelf Renew (unofficial): status
