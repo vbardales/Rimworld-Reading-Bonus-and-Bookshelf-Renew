@@ -1,5 +1,5 @@
 # Daily Furniture pass. Plays 04. The dependency set of Daily furniture is not known yet: check the staged and loaded lists at the first run.
-ZeroWhite.Dailyfurniture
+ZeroWhite.Dailyfurniture  3024562670
 nelim.pickletools.stagedecor   path:PickleTools/StageDecor/Mod
 nelim.pickletools.colonistrace path:PickleTools/ColonistRace/Mod
 nelim.pickletools.keyedclick   path:PickleTools/KeyedClick/Mod
