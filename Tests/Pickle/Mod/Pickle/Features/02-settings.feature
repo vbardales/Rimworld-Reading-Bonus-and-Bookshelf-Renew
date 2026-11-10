@@ -9,14 +9,15 @@ Feature: Reading Bonus and Bookshelf: the settings change the bonus and reset cl
     And Nelim's Pickle Tools: I place the decor "Bookcase" at (72, 88)
     And Nelim's Pickle Tools: I fill the storage building "Bookcase" at (72, 88) with 4 things "Novel" of quality Normal
 
-  # 0.0625 (1/16) is exact in a float: the settings file holds the float text, so 0.02 was written as 0.0200000014 and failed the text compare.
+  # The slider rounds to 0.001, and a float cannot hold 0.02 exactly, so the file text is "0.0200000014": the value is read back from the file and compared as a number, not as file text.
   @timeout:300
   Scenario: a heavier normal weight raises the bonus, and reset brings it back
     When Nelim's Pickle Tools: I open the mod options page of the mod "nelim.readingbonusandbookshelf"
-    And Nelim's Pickle Tools: I set the option "bounsNormal" of the mod "nelim.readingbonusandbookshelf" to "0.0625"
+    And Nelim's Pickle Tools: I set the option "bounsNormal" of the mod "nelim.readingbonusandbookshelf" to "0.02"
     And Nelim's Pickle Tools: I close the mod options window
-    Then Nelim's Pickle Tools: the settings file of the mod "nelim.readingbonusandbookshelf" holds "bounsNormal" as "0.0625"
-    And Nelim's Pickle Tools: the room at (71, 86) has the stat "ReadingBonus" at 1.0625
+    And Nelim's Pickle Tools: the settings of the mod "nelim.readingbonusandbookshelf" are re-read from the file
+    Then Nelim's Pickle Tools: the option "bounsNormal" of the mod "nelim.readingbonusandbookshelf" is "0.02"
+    And Nelim's Pickle Tools: the room at (71, 86) has the stat "ReadingBonus" at 1.02
     When Nelim's Pickle Tools: I open the mod options page of the mod "nelim.readingbonusandbookshelf"
     And I click button keyed "KTK_BookMod_ResetToDefault"
     And Nelim's Pickle Tools: I close the mod options window
