@@ -1,0 +1,8 @@
+# Language pass (French, then ChineseSimplified): the base set plus the tooltip and capture steps. Plays 07.
+nelim.pickletools.stagedecor   path:PickleTools/StageDecor/Mod
+nelim.pickletools.colonistrace path:PickleTools/ColonistRace/Mod
+nelim.pickletools.keyedclick   path:PickleTools/KeyedClick/Mod
+nelim.pickletools.deffields    path:PickleTools/DefFieldSteps/Mod
+nelim.pickletools              path:PickleTools/Tests/Pickle/StandaloneBase/Mod
+nelim.pickletools.hoversteps path:PickleTools/HoverSteps/Mod
+nelim.pickletools.screenshotmode path:PickleTools/ScreenshotMode/Mod

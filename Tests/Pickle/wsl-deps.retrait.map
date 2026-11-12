@@ -1,0 +1,7 @@
+# Removal pass: the base set plus the save steps. Plays 08, then 09 without the mod (-ThenWithout).
+nelim.pickletools.stagedecor   path:PickleTools/StageDecor/Mod
+nelim.pickletools.colonistrace path:PickleTools/ColonistRace/Mod
+nelim.pickletools.keyedclick   path:PickleTools/KeyedClick/Mod
+nelim.pickletools.deffields    path:PickleTools/DefFieldSteps/Mod
+nelim.pickletools              path:PickleTools/Tests/Pickle/StandaloneBase/Mod
+nelim.pickletools.savesteps path:PickleTools/SaveSteps/Mod

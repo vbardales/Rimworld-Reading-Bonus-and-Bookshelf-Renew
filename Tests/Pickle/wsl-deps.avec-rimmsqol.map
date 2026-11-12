@@ -1,0 +1,5 @@
+# RIMMSQOL pass: RIMMSQOL (Workshop 1084452457, needs Harmony, staged by the runner), the steps that drive it and the capture mode. Plays 06.
+MalteSchulze.RIMMSqol            1084452457
+nelim.pickletools.rimmsqol      path:PickleTools/RimmsqolSteps/Mod
+nelim.pickletools.screenshotmode path:PickleTools/ScreenshotMode/Mod
+nelim.pickletools.loadaudit path:PickleTools/LoadAudit/Mod
