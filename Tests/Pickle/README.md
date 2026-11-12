@@ -11,6 +11,7 @@ Written 2026-11-02, **never run**: no scenario here is a pass. The steps they us
 | `01-reading-bonus.feature` | 6 blocks (the outline plays 7 qualities) | F1 every book counts, F6 vanilla bookcase still drawn (`@review`) |
 | `02-settings.feature` | 4 | F2 weights, F3 toggle off (vanilla value derived from NPT's 1.016 for 2 books), F4 reset, F9 settings window (`@review`) |
 | `03-furniture.feature` | 2 | F5, F7 with Gloomy Furniture (`@requires:Solaris.FurnitureBase`) |
+| `05-gloomy-continued.feature` | 2 | F5, F7 with Gloomy Furniture (Continued) (`@requires:Gloomy.Furniture.Continued`) |
 | `04-daily-furniture.feature` | 2 outlines (2 shelves each) | F5, F7 with Daily Furniture (`@requires:ZeroWhite.Dailyfurniture`) |
 
 Each scenario loads `test-colony`, builds a closed roofed 5 by 5 room at (70, 85), places a bookcase at (72, 88) and checks the `ReadingBonus` room stat at (71, 86).
@@ -22,6 +23,7 @@ Each scenario loads `test-colony`, builds a closed roofed 5 by 5 room at (70, 85
 | Minimal | `wsl-deps.sans-facultatifs.map` | 01, 02 | English, then French |
 | Gloomy Furniture | `wsl-deps.avec-gloomy.map` | 03 | English |
 | Daily Furniture | `wsl-deps.avec-dailyfurniture.map` | 04 | English |
+| Gloomy Furniture (Continued) | `wsl-deps.avec-gloomy-continued.map` | 05 | English |
 
 ```
 Run-PickleWsl.ps1 -Mod ReadingBonusAndBookshelfRenew -DepMap wsl-deps.sans-facultatifs.map -Language English
