@@ -15,7 +15,7 @@ apart from one defect, fixed below (the setting never applied, and the workaroun
   checked against the 1.6 game files: `RoomStatDef ReadingBonus` still carries a `workerClass`,
   `BookcaseBase` is still the only def declaring `thingClass Building_Bookcase`, and
   `Building_Bookcase.DrawAt` still matches the reimplementation the mod ships.
-- A French translation, 11 keys, covering everything the mod displays. The wording is taken from
+- A French translation, 16 keys, covering everything the mod displays. The wording is taken from
   the game's own vocabulary rather than translated freely: *bonus de lecture* from
   `RoomStatDef ReadingBonus`, *case* for a map cell, and the seven quality tiers in the
   parenthesised form the game already uses for items.
