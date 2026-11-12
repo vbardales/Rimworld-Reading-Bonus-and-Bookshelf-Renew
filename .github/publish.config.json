@@ -1,0 +1,18 @@
+{
+  "templateStamp": "b55ad31e7d6c",
+  "workshopId": "3811391948",
+  "packageId": "nelim.readingbonusandbookshelf",
+  "releaseTitle": "Reading Bonus and Bookshelf Renew (unofficial) {version}",
+  "requirePaths": [
+    "Assemblies/KTK_BookPatch.dll",
+    "Defs",
+    "Patches",
+    "Languages"
+  ],
+  "forbidPaths": [],
+  "previewFile": "About/Preview.png",
+  "galleryDir": "Art/Gallery",
+  "build": {
+    "project": "Source/ReadingBonusAndBookshelfPatch/KTK_BookPatch.csproj"
+  }
+}
